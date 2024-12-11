@@ -4,7 +4,7 @@ This project implements various clustering algorithms to analyze and optimize te
 
 ## Features
 
-- Multiple clustering algorithms (K-means, Hierarchical, DBSCAN, Spectral)
+- Multiple clustering algorithms (K-means, Hierarchical, DBSCAN)
 - Team composition analysis
 - Temporal evolution analysis
 - Visualization tools for cluster comparison
