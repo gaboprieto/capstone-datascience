@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Collaborative Success in Cyberlearning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fiu-blue': '#081E3F',
+                        'fiu-gold': '#B6862C',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-fiu-blue text-white p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <div class="w-16">
+                    <img src="https://www.bncollege.com/wp-content/uploads/2023/06/fiu-white-logo-740x345-1.png" alt="FIU Logo" class="w-full" />
+                </div>
+                <h1 class="text-2xl font-bold">Florida International University</h1>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-fiu-blue mb-4">
+                Exploring Collaborative Success of Undergraduate Students within a Cyberlearning Environment Using Gamification
+            </h1>
+            <p class="text-xl text-fiu-gold font-semibold">
+                Gabriel Prieto - Florida International University
+            </p>
+        </header>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white shadow-md rounded-lg p-6 border-t-4 border-fiu-blue">
+                <h2 class="text-2xl font-semibold text-fiu-blue mb-4">Abstract</h2>
+                <p class="text-gray-600">
+                    This study investigates the relationship between teamwork dynamics and academic performance by analyzing patterns of student collaboration across multiple semesters. Utilizing advanced data analysis and clustering techniques on educational data from the SEP-Cyle database, we examined how collaborative interactions evolve and impact student achievement in a Software Testing course.
+                </p>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 border-t-4 border-fiu-gold">
+                <h2 class="text-2xl font-semibold text-fiu-blue mb-4">Research Questions</h2>
+                <ol class="list-decimal pl-5 text-gray-600 space-y-2">
+                    <li>What are the patterns of student behavior and how do they relate to the team they were assigned?</li>
+                    <li>How does being in a team affect behavior over time?</li>
+                    <li>How are the student's characteristics different when we cluster them versus their original grouping?</li>
+                </ol>
+            </div>
+        </div>
+
+        <section class="mb-12">
+            <div class="bg-white shadow-md rounded-lg p-6 border-t-4 border-fiu-blue">
+                <h2 class="text-3xl font-semibold text-fiu-blue mb-6">Research Results</h2>
+                
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-fiu-gold mb-4">Clustering Algorithm Performance</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead class="bg-fiu-blue text-white">
+                                    <tr>
+                                        <th class="border p-2">Method</th>
+                                        <th class="border p-2">Clusters</th>
+                                        <th class="border p-2">Similarity Score</th>
+                                        <th class="border p-2">Distance to Centroid</th>
+                                        <th class="border p-2">Team Dissimilarity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="border p-2">Original</td>
+                                        <td class="border p-2">8.813</td>
+                                        <td class="border p-2">0.549</td>
+                                        <td class="border p-2">0.651</td>
+                                        <td class="border p-2">-</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="border p-2">K-Means</td>
+                                        <td class="border p-2">8.813</td>
+                                        <td class="border p-2">0.654</td>
+                                        <td class="border p-2">0.506</td>
+                                        <td class="border p-2">0.18</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="border p-2">Hierarchical</td>
+                                        <td class="border p-2">8.813</td>
+                                        <td class="border p-2">0.674</td>
+                                        <td class="border p-2">0.472</td>
+                                        <td class="border p-2">0.18</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="border p-2">DBSCAN</td>
+                                        <td class="border p-2">2.438</td>
+                                        <td class="border p-2">0.658</td>
+                                        <td class="border p-2">0.552</td>
+                                        <td class="border p-2">0.06</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-fiu-gold mb-4">Time Period Analysis</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead class="bg-fiu-blue text-white">
+                                    <tr>
+                                        <th class="border p-2">Method</th>
+                                        <th class="border p-2">Period</th>
+                                        <th class="border p-2">Similarity Score</th>
+                                        <th class="border p-2">Distance to Centroid</th>
+                                        <th class="border p-2">Team Dissimilarity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="border p-2" rowspan="3">Original</td>
+                                        <td class="border p-2">Beginning</td>
+                                        <td class="border p-2">0.52</td>
+                                        <td class="border p-2">0.69</td>
+                                        <td class="border p-2">-</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="border p-2">Middle</td>
+                                        <td class="border p-2">0.54</td>
+                                        <td class="border p-2">0.67</td>
+                                        <td class="border p-2">-</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="border p-2">End</td>
+                                        <td class="border p-2">0.55</td>
+                                        <td class="border p-2">0.65</td>
+                                        <td class="border p-2">-</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="border p-2" rowspan="3">Clustered</td>
+                                        <td class="border p-2">Beginning</td>
+                                        <td class="border p-2">0.49</td>
+                                        <td class="border p-2">0.64</td>
+                                        <td class="border p-2">0.18</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="border p-2">Middle</td>
+                                        <td class="border p-2">0.58</td>
+                                        <td class="border p-2">0.67</td>
+                                        <td class="border p-2">0.19</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="border p-2">End</td>
+                                        <td class="border p-2">0.67</td>
+                                        <td class="border p-2">0.47</td>
+                                        <td class="border p-2">0.18</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-fiu-gold mb-4">Key Findings</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <h4 class="font-semibold text-fiu-blue">Behavioral Patterns</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                    <li>Teams gradually develop more similar behaviors over time</li>
+                                    <li>Hierarchical clustering creates more cohesive and tighter-knit clusters</li>
+                                    <li>Team dissimilarity remains stable at approximately 18%</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="font-semibold text-fiu-blue">Performance Metrics</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                    <li>Clustered teams show higher grades after the 20th percentile</li>
+                                    <li>Upper percentile teams achieve higher completion rates</li>
+                                    <li>Clustered teams near the 97th percentile showed significantly higher productivity</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-12 text-gray-600">
+            <div class="mb-4">
+                <p>Research by Gabriel Prieto</p>
+                <p>Mentors: Dr. Agoritsa Polyzou & Dr. Peter J. Clarke</p>
+                <p>Florida International University</p>
+            </div>
+            <div>
+                <a href="https://github.com/gaboprieto/capstone-datascience" 
+                   target="_blank" 
+                   class="text-fiu-blue hover:text-fiu-gold flex items-center justify-center transition-colors">
+                    <i class="fab fa-github mr-2 text-2xl"></i>
+                    View Project on GitHub
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
