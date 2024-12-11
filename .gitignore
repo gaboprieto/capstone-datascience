@@ -76,7 +76,7 @@ wheels/
 output/
 results/
 figures/
-*.png
+# *.png
 *.jpg
 *.jpeg
 *.pdf
