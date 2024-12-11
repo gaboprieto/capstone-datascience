@@ -4,7 +4,7 @@ This project implements various clustering algorithms to analyze and optimize te
 
 ## Features
 
-- Multiple clustering algorithms (K-means, Hierarchical, DBSCAN, Spectral)
+- Multiple clustering algorithms (K-means, Hierarchical, DBSCAN)
 - Team composition analysis
 - Temporal evolution analysis
 - Visualization tools for cluster comparison
@@ -31,15 +31,33 @@ bash
 python main.py --input path/to/data.csv --output path/to/output --grades-file path/to/grades
 ```
 
-## Project Structure
+## Directory Structure Explanation
+
+- `data/`: Contains input data files
+  - `student_data.csv`: Student activity and performance data
+  - `grades.xlsx`: Student grades data
 
 - `src/`: Source code
-  - `clustering/`: Clustering algorithms
-  - `visualization/`: Plotting and visualization
-  - `utils/`: Data processing utilities
+  - `clustering/`: Clustering algorithms and metrics
+    - `algorithms.py`: Implementation of clustering algorithms
+    - `metrics.py`: Evaluation metrics for clustering
+  - `utils/`: Utility functions
+    - `analysis.py`: Data analysis functions
+    - `data_processing.py`: Data preprocessing functions
+  - `visualization/`: Visualization code
+    - `plots.py`: Plotting functions
+
+- `output/`: Generated output
+  - `figures/`: Generated plots and visualizations
+  - `results/`: Analysis results and reports
+
 - `tests/`: Unit tests
-- `data/`: Input data
-- `output/`: Generated outputs
+
+- Root files:
+  - `.gitignore`: Git ignore rules
+  - `README.md`: Project documentation
+  - `requirements.txt`: Project dependencies
+  - `main.py`: Main execution script
 
 ## License
 
